@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <item
+        android:id="@+id/copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_copy"
+        android:iconTint="@android:color/black"
+        android:title="Copy TnC"/>
+
+    <item
+        android:id="@+id/sentiment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_sentiment_satisfied_black_24dp"
+        android:iconTint="@android:color/black"
+        android:title="Get sentiment"/>
+
+    <item
+        android:id="@+id/refer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_align_left"
+        android:iconTint="@android:color/black"
+        android:title="Refer to paragraph"/>
+
+</menu>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/bg4"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="15dp"
+                    android:textSize="15dp"
+                    android:text="Import your Terms and Conditions file using following import options!"
+                    android:textColor="@android:color/black"/>
+
+                <LinearLayout
+                    android:background="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="3dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/fileOpener"
+                        android:backgroundTint="@android:color/white"
+                        android:tint="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_import"
+                        android:text="@string/import_file"
+                        android:tooltipText="Open file explorer!"/>
+                    <ImageButton
+                        android:id="@+id/pasteDialogOpener"
+                        android:backgroundTint="@android:color/white"
+                        android:tint="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_paste"
+                        android:tooltipText="Paste copied text!" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/importLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginHorizontal="15dp">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:tint="@color/colorAccent"
+                        android:id="@+id/importImage"
+                        android:minWidth="0dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="invisible"
+                        android:backgroundTint="@color/colorAccent"/>
+
+                    <TextView
+                        android:id="@+id/importedFilename"
+                        android:text="@string/filepath"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_gravity="center"
+                        android:paddingHorizontal="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="start"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:singleLine="true" />
+
+                    <ImageButton
+                        android:id="@+id/reset"
+                        android:background="@android:color/transparent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/ic_add_circle_outline_black_24dp"
+                        android:visibility="invisible"
+                        android:tooltipText="Reset import!"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="15dp"
+                    android:text="Drag and adjust the seekbar to select the percentage of reduction desired :"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/percent_seeked"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textSize="15dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:text="0%"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_vertical|end"/>
+
+                    <SeekBar
+                        android:id="@+id/seekBar"
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_width="200dp"
+                        android:layout_height="20dp"
+                        android:max="100"
+                        android:progress="1" />
+
+                    <TextView
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:text=" 100%"
+                        android:textSize="15dp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/black">
+                    <Button
+                        android:id="@+id/flaskCall_btn"
+                        android:backgroundTint="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="3dp"
+                        android:text="Generate Summary"
+                        android:tooltipText="Generate result!"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-9867650184491654/4041260821"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+</androidx.constraintlayout.widget.ConstraintLayout>

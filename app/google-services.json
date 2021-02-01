@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "256982861325",
+    "firebase_url": "https://summarizeit-gagan.firebaseio.com",
+    "project_id": "summarizeit-gagan",
+    "storage_bucket": "summarizeit-gagan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256982861325:android:f6fade5339902cf90e3744",
+        "android_client_info": {
+          "package_name": "com.guptagagann.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256982861325-clafi2o2uc5pbt7drso17g3a7t4m3smc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPxT7pdEIo79Oe6NQIoRd_Gsn1CJ2wdzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256982861325-clafi2o2uc5pbt7drso17g3a7t4m3smc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
