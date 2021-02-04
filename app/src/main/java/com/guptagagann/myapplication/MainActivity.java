@@ -281,20 +281,21 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onResponse(Call<FlaskApiResponseBody> call, Response<FlaskApiResponseBody> response) {
                             if(response.body()!=null && response.errorBody()==null){
-
                                 startActivity(new Intent(MainActivity.this,ResultPage.class)
                                         .putExtra("documentName",documentName)
                                         .putExtra("data",response.body())
                                         .putExtra("pr",reduction_percent_selected));
 
-                                new android.os.Handler().postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        progressDialog.dismiss();
-                                    }
-                                },2000);
-
                             }
+                            else {
+                                Toast.makeText(getApplicationContext(),"Summary generation failed! File too big or contains unsupported characters.",Toast.LENGTH_LONG).show();
+                            }
+                            new android.os.Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    progressDialog.dismiss();
+                                }
+                            },2000);
                         }
 
                         @Override
