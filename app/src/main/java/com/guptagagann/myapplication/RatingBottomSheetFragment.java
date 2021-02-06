@@ -182,7 +182,7 @@ public class RatingBottomSheetFragment extends BottomSheetDialogFragment {
                     email.setError("Please provide the valid email!");
                 }else {
                     RetrofitApis retrofitApis = RetrofitInstanceGetter
-                            .getRetrofitInstance("http://guptagagann.pythonanywhere.com/")
+                            .getRetrofitInstance("http://guptagagann1.pythonanywhere.com/")
                             .create(RetrofitApis.class);
 
                     SourceFileRequestBody sourceFileRequestBody = new SourceFileRequestBody();
