@@ -42,81 +42,87 @@
         android:textColor="@android:color/white"/>
 
     <LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_marginVertical="5dp"
-    >
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:text=" Gagan Gupta"
-        android:drawableLeft="@drawable/ic_baseline_person_24"
-        android:drawableTint="#ffff"
-        android:textColor="@android:color/white"/>
-
-</LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginVertical="5dp"
-        >
-       <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:text=" Kartikay Shandil"
-        android:drawableLeft="@drawable/ic_baseline_person_24"
-        android:drawableTint="#ffff"
-        android:textColor="@android:color/white"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginVertical="5dp"
-        >
-       <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:text="Arkadeep Basu"
-        android:drawableLeft="@drawable/ic_baseline_person_24"
-        android:drawableTint="#ffff"
-        android:textColor="@android:color/white"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginVertical="5dp"
-        >
-        <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:text="Deepanshu Maini"
-        android:drawableLeft="@drawable/ic_baseline_person_24"
-        android:drawableTint="#ffff"
-        android:textColor="@android:color/white"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="60dp"
         android:layout_marginVertical="5dp"
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:text="Naman Gupta"
+            android:text=" Gagan Gupta"
             android:drawableLeft="@drawable/ic_baseline_person_24"
             android:drawableTint="#ffff"
             android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text=" Kartikay Shandil"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawableTint="#ffff"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text=" Arkadeep Basu"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawableTint="#ffff"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text=" Deepanshu Maini"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawableTint="#ffff"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text=" Naman Gupta"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawableTint="#ffff"
+            android:textColor="@android:color/white"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="5dp"
+        >
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="5dp"
+        >
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="5dp"
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="5dp"
+        >
+
     </LinearLayout>
 
 

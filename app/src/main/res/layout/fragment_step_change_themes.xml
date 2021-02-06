@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_title"
+        android:scaleType="centerInside"
+        android:src="@drawable/group" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_desc"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/half_margin"
+        android:text="Welcome User"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/getStarted"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:textSize="20sp"
+        android:text="Summarize your first document with us now!"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/getStarted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:backgroundTint="#000"
+        android:maxWidth="30dp"
+        android:padding="3dip"
+        android:textColor="#fff"
+        android:text="Get Started" />
+
+</RelativeLayout>

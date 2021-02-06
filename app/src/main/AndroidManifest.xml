@@ -24,15 +24,21 @@
         <activity
             android:name="com.guptagagann.myapplication.MainActivity"
             android:launchMode="singleTop"
-            android:label="@string/app_name" />
+            android:label="@string/app_name" >
+
+
+        </activity>
         <activity
             android:name="com.guptagagann.myapplication.SplashScreen"
-            android:theme="@style/AppTheme2.NoActionBar">
+            android:theme="@style/AppTheme2.NoActionBar"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
         <activity
             android:name="com.guptagagann.myapplication.ResultPage"
@@ -66,6 +72,10 @@
                 android:value="com.guptagagann.myapplication.MainActivity" />
         </activity>
         <activity android:name="com.guptagagann.myapplication.About"/>
+        <activity android:name=".WelcomeActivity"
+            android:theme="@style/AppTheme2.NoActionBar"
+            android:noHistory="true"/>
+
     </application>
 
 </manifest>

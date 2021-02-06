@@ -140,8 +140,8 @@ public class ParaPage extends AppCompatActivity {
             paras_list = flaskApiResponseBody.getParas_list();
             rankedDictionary = flaskApiResponseBody.getRankedDictionary();
         }else {
-            Toast.makeText(getApplicationContext(),
-                    "Null object! Phone fek de!",Toast.LENGTH_SHORT).show();
+//            Toast.makeText(getApplicationContext(),
+//                    "Null object! Phone fek de!",Toast.LENGTH_SHORT).show();
         }
 
         paras = new String[paras_list.size()];

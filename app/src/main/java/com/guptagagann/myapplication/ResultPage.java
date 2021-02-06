@@ -502,7 +502,7 @@ public class ResultPage extends AppCompatActivity {
         File directory = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS)
                 .getAbsolutePath() +"/"+ getString(R.string.app_name));
         if(!directory.mkdirs()){
-            Toast.makeText(this, "Directory not created!", Toast.LENGTH_LONG).show();
+//            Toast.makeText(this, "Directory not created!", Toast.LENGTH_LONG).show();
         }
         File file = new File(directory,filename);
         filePath = directory.toString() + File.separator + filename;

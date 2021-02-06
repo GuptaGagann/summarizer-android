@@ -18,4 +18,29 @@
     <color name="gradient">#33FB0202</color>
     <color name="red">#FF0019</color>
     <color name="gray">#B8B0B0</color>
+    <color name="colorGray">#607D8B</color>
+
+    <color name="colorBackground_black">#0A0808</color>
+
+    <color name="windowBackground_light">#F4F4F6</color>
+    <color name="windowBackground_dark">#33343B</color>
+
+    <color name="dot_inactive">#FB5246</color>
+
+    <!-- DOTS COLOR -->
+
+    <array name="array_dot_active">
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_inactive</item>
+        <item>@color/dot_inactive</item>
+        <item>@color/dot_inactive</item>
+        <item>@color/dot_inactive</item>
+    </array>
+
 </resources>

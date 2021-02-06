@@ -1,7 +1,9 @@
 package com.guptagagann.myapplication;
 
-import android.content.pm.PackageInfo;
+import android.content.SharedPreferences;
+
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.widget.TextView;
 
@@ -9,17 +11,22 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import lombok.SneakyThrows;
 
+import static com.guptagagann.myapplication.Constants.VERSION_NAME;
+
 public class About extends AppCompatActivity {
     TextView version;
+     SharedPreferences mSharedPreferences;
+
     @SneakyThrows
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         setContentView(R.layout.about);
         super.onCreate(savedInstanceState);
-        PackageInfo packageInfo = getPackageManager().getPackageInfo(getPackageName(),0);
-        float versionCode = packageInfo.versionCode;
+        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+
+        String versionName = mSharedPreferences.getString(VERSION_NAME, "");
         version = findViewById(R.id.version);
-        version.setText("2.0");
+        version.setText(versionName);
     }
 
     @Override

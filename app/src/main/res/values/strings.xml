@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SummarizeIt</string>
+    <string name="app_name">Next Gen Summarizer</string>
     <string name="action_settings">Settings</string>
     <string name="import_file">Import File</string>
     <string name="result_here">Result Here</string>
@@ -27,6 +27,13 @@
     <string name="paraView">Rate the <b>Paragraph View</b></string>
     <string name="permission_necessary">Storage permission required!</string>
     <string name="action_about">About</string>
-    <string name="developer">Developed &amp; Managed By <b>Gagan Gupta</b></string>
+    <string name="developer"><b>Development Team</b></string>
+    <string name="file_import">File Import</string>
+    <string name="importmessage">Click here to import TnC file!</string>
+    <string name="messageselectfile">Select the document to be summarized!</string>
+    <string name="select_file">Select File</string>
+    <!-- Feedback Strings -->
+    <string name="feedback_subject">Suggestions for Images To PDF Converter</string>
+    <string name="feedback_text">Kindly write your precious feeback, or just drop a Hi! :)</string>
 
 </resources>
