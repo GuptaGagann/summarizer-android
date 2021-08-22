@@ -114,11 +114,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onAdFailedToLoad(int errorCode) {
-                // Code to be executed when an ad request fails.
-            }
-
-            @Override
             public void onAdOpened() {
                 // Code to be executed when an ad opens an overlay that
                 // covers the screen.
@@ -127,11 +122,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onAdClicked() {
                 // Code to be executed when the user clicks on an ad.
-            }
-
-            @Override
-            public void onAdLeftApplication() {
-                // Code to be executed when the user has left the app.
             }
 
             @Override
@@ -297,7 +287,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     RetrofitApis retrofitApis= RetrofitInstanceGetter
-                            .getRetrofitInstance("https://guptagagann1.pythonanywhere.com")
+                            .getRetrofitInstance("https://guptanamannn.pythonanywhere.com")
                             .create(RetrofitApis.class);
 
                     SourceFileRequestBody sourceFileRequestBody=new SourceFileRequestBody();

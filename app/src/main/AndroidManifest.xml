@@ -19,7 +19,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-7544533966323958~5477673298"/>
+            android:value="ca-app-pub-9867650184491654~1798240869"/>
 
         <activity
             android:name="com.guptagagann.myapplication.MainActivity"
